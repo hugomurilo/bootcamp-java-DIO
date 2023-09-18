@@ -1,0 +1,32 @@
+spring.datasource.url=jdbc:mysql://${MYSQL_HOST:localhost}:3306/teste_dio
+spring.datasource.username=root
+spring.datasource.password=123456
+
+spring.jpa.show-sql = false
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5Dialect
+
+
+
+
+
+
+# PORTA ONDE VAI SER EXECUTADO O TOMCAT
+server.port = 3306
+
+# INFORMAÇÕES PARA CONEXÃO COM O BANCO DE DADOS MYSQL
+spring.datasource.url=jdbc:mysql://localhost/teste_dio?useTimezone=true&serverTimezone=UTC
+spring.datasource.username=root
+spring.datasource.password=123456
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+# MANIPULANDO ESTRUTURAS (TABELAS)
+spring.jpa.hibernate.ddl-auto=update
+
+
+
+<dependency>
+			<groupId>com.mysql</groupId>
+			<artifactId>mysql-connector-j</artifactId>
+			<scope>runtime</scope>
+		</dependency>
