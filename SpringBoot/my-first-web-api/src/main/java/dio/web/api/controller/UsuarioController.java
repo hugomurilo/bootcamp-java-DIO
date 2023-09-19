@@ -33,4 +33,9 @@ public class UsuarioController {
     }
 
     // como todos terão um padrão iniciando "/users", pode-se usar a anotação @RequestMapping
+
+    @PutMapping()
+    public void putUser(@RequestBody Usuario usuario){
+        repository.save(usuario);
+    }
 }
