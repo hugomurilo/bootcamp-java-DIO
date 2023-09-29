@@ -5,9 +5,9 @@ classDiagram
   class User {
     - name: string
     - account: Account
-    - features: Features
+    - features[]: Features
     - card: Card
-    - news: News
+    - news[]: News
   }
 
   class Account {
