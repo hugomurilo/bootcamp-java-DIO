@@ -2,8 +2,16 @@
 - API RESTfull para uma aplicação bancária que salva informações do usuário como nome e dados bancários desenvolvida no último lab project juntamente com o instrutor. 
 - Essa API realiza, até o momento, dois métodos do padrão CRUD: CREATE e READ.
 - Deploy na plataforma Railway: [Acesse pelo Swagger UI](https://bootcamp-java-dio-prd.up.railway.app/swagger-ui/index.html)
-- Desenvolvida utilizando o framework Spring Boot na linguagem Java.
 
+## Principais Ferramentas Uitilizadas
+- **Java 17**
+- **Spring Boot 3**
+- **Spring Data JPA**
+- **PostgreSQL:** provisionado no Railway
+- **Railway:** plataforma para deploy e monitoramento, garantindo os bancos de dados como serviço e pipelines de CI/CD.
+- **Json Editor:** utilizado na modelagem do modelo de negócio.
+- **ChatGPT:** para modelagem do diagrama de classes utilizando a linguagem mermaid
+  
 ## Testando os métodos POST e GET
 Para testar, utilize a estrutura JSON abaixo, alterando os valores respectivos:
 ```
@@ -72,9 +80,4 @@ classDiagram
   User "1" *--> "1" Card 
   User "1" *--> "N" News 
 ```
-## Ferramentas utilizadas 
-- [Java Spring Boot](https://spring.io/)
-- [PostgreSQL (provisionado no Railway)](https://docs.railway.app/databases/postgresql)
-- [Railway](https://railway.app/)
-- [Json Editor](https://jsoneditoronline.org/)
-- [ChatGPT (para modelagem do diagrama de classes com mermaid)](https://chat.openai.com/)
+
